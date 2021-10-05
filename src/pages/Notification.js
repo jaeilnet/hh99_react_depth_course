@@ -4,7 +4,7 @@ import { Grid } from "../elements"
 // import { Grid, Text } from "../elements"
 
 export const Notification = (props) => {
-  console.log("noti", props)
+  // console.log("noti", props)
 
   let noti = [
     { user_name: "jaeilit", post_id: "post1" },

@@ -1,10 +1,9 @@
 import React from "react"
 import { Grid, Text, Button } from "../elements"
-import { getCookie, deleteCookie } from "../shared/Cookie"
 
 import { useSelector, useDispatch } from "react-redux"
 import { actionCreators as userActions } from "../redux/modules/user"
-
+import { NotiBadge } from "./NotiBadge"
 import { history } from "../redux/configureStore"
 import { apiKey } from "../shared/firebase"
 
@@ -30,12 +29,12 @@ const Header = (props) => {
 
           <Grid is_flex>
             <Button text="내정보"></Button>
-            <Button
+            <NotiBadge
               text="알림"
               _onClick={() => {
                 history.push("/alarm")
               }}
-            ></Button>
+            />
             <Button
               text="로그아웃"
               _onClick={() => {

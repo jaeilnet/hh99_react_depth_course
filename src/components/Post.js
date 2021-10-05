@@ -6,7 +6,6 @@ import { history } from "../redux/configureStore"
 import { Button, Grid, Image, Text } from "../elements"
 
 const Post = (props) => {
-  console.log("z", props)
   return (
     <React.Fragment>
       <Grid>
@@ -16,6 +15,7 @@ const Post = (props) => {
             <Text bold>{props.user_info.user_name}</Text>
           </Grid>
           <Grid is_flex width="auto">
+            <Text>{props.insert_dt}</Text>
             {props.is_me && (
               <Button
                 width="auto"
@@ -28,7 +28,6 @@ const Post = (props) => {
                 수정
               </Button>
             )}
-            <Text>{props.insert_dt}</Text>
           </Grid>
         </Grid>
         <Grid padding="16px">

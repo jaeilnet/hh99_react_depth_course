@@ -2,7 +2,7 @@ import React from "react"
 import { Grid, Text, Image } from "../elements"
 
 export const Card = (props) => {
-  console.log("props", props)
+  // console.log("props", props)
 
   const { image_url, user_name, post_id } = props
 
@@ -13,7 +13,7 @@ export const Card = (props) => {
       </Grid>
       <Grid>
         <Text>
-          <b>{user_name}</b>누가누가 게시글에 댓글을 남겼습니다.
+          <b>{user_name}</b>님이 게시글에 댓글을 남겼습니다.
         </Text>
       </Grid>
     </Grid>
