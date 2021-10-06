@@ -9,7 +9,7 @@ const PostWrite = (props) => {
   const dispatch = useDispatch()
 
   const is_login = useSelector((state) => state.user.is_login)
-  const preview = useSelector((state) => state.img.preview)
+  const preview = useSelector((state) => state.image.preview)
   const post_list = useSelector((state) => state.post.list)
 
   const post_id = props.match.params.id

@@ -6,7 +6,7 @@ import { actionCreators as imageActions } from "../redux/modules/image"
 const Upload = (props) => {
   const imgRef = useRef()
   const dispatch = useDispatch()
-  const is_uploading = useSelector((state) => state.img.uploading)
+  const is_uploading = useSelector((state) => state.image.uploading)
 
   const setFiles = () => {
     const reader = new FileReader()

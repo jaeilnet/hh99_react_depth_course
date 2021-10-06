@@ -21,7 +21,11 @@ const Header = (props) => {
     return (
       <React.Fragment>
         <Grid is_flex padding="4px 16px">
-          <Grid>
+          <Grid
+            _onClick={() => {
+              history.push("/")
+            }}
+          >
             <Text margin="0px" size="24px" bold>
               헬로
             </Text>
